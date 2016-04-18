@@ -1,0 +1,216 @@
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Shadows Into Light', cursive;*/
+
+#contenidos{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	position: relative;
+	
+}
+
+/*-----------------------etiquetas------------------------*/
+
+body{
+/*llamar archivo*/
+background-image: url(../img/fondo_huellas.jpg);
+/*optimiza pantalla grande*/
+background-repeat: no-repeat;
+/*ampliar imagen automaticamente*/
+background-size: cover;
+}
+
+h1{
+	font-family: 'Indie Flower', cursive;
+	margin-left: 10px;
+	font-size: 70px; /*tamaño de fuente*/
+	text-align: center; /*alineacion de texto*/
+	color: yellow;
+	text-shadow: rgb(0,0,150) 4px 4px 7px;
+}
+
+h2{
+	font-family: 'Shadows Into Light', cursive;
+	margin-left: 10px;
+	font-size: 40px;
+	text-align: left;
+	text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
+
+h3{
+	font-family: 'Shadows Into Light', cursive;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
+
+h4{
+	font-family: 'Shadows Into Light', cursive;
+	color: blue;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: rgb(0,0,0) 1px 1px 1px;
+}
+
+h5{
+	font-family: 'archivo';
+	color: black;
+	font-size: 16px;
+	text-align: left;
+}
+
+h6{
+	font-family: 'archivo';
+	color: green;
+	font-size: 10px;
+	text-align: left;
+}
+
+ul{
+	margin: auto;
+	padding-top: 4px;
+}
+
+header{
+	width: 1000px; /*ancho*/
+	height: 220 px; /*alto*/
+	background: rgba(255, 255, 255, 0.0); /*color*/
+}
+/*-----------------bloque menu-------------------------*/
+nav{/*cuadro donde va el menu*/
+	width: 1000px;
+	height: 55px;
+	background: green;
+	border-radius: 10px;
+	box-shadow: 0 0 30px yellow inset;/*sombra*/
+}
+
+nav > ul > li:hover{
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+/********************menu desplegable*******************/
+nav > ul > li > ul > li{
+background: black;
+float: none;
+}
+
+nav > ul > li > ul > li:hover{
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+nav > ul > li > ul{
+	display: none;
+	position: absolute;
+	margin-left: 0px;
+}
+
+nav > ul >li:hover > ul{
+	display: block;
+}  
+/****************************************/
+
+
+/*------------------botones de menu---------------------------*/
+li{ 
+	float: left;/*no alinear elementos a la izquierda*/
+	list-style-type: none;/*no alinear elementos a la izquierda*/
+	padding: 10px;
+	background: black;
+	margin: 3px; 
+	border-radius: 10px;/*eskinas curvas*/
+	box-shadow: 0 0 10px white inset;/*sombra*/
+}
+
+/*---------------------contenido-------------------------------*/
+section{
+	width: 670px;
+	background: rgba(0, 255, 255, 0.4);
+	height: 1250px;
+	float: right;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 40px white inset;
+}
+
+section > article > figure{
+	margin-left: 25px;
+}
+
+section > article > p > figure{
+	margin-left: 25px;
+	margin-right: 25px;
+	width: 70px; height: 40px;
+}
+
+/*--------------------secciones laterales------------------------*/
+aside{
+	width: 150px;
+	background: rgba(0, 255, 255, 0.4);
+	height: 1250px;
+	float: right;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 40px white inset;
+}
+
+aside > ul > li{
+	list-style-type: none;
+	background: red;
+	float: none;
+	font-size: 15px;
+}
+
+aside > ul{
+	margin-left: 2px;
+	padding-left: 1px;
+}
+
+aside > h5{
+	margin-left: 5px;
+}
+
+img.tam{
+	width: 130px; height: 110px;
+}
+aside > figure{
+	margin-left: 10px;
+}
+
+/*----------------------seccion inferior------------------------*/
+footer{
+	width: 1000px;
+	height: 70px;
+	background: rgba(0, 255, 255, 0.4);
+	float: left;
+	margin-top: 20px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 20px white inset;
+}
+
+/*configurar texto*/
+p{
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 34px;/*salto de linea de texto*/
+	padding: 10px;
+	text-align: justify;/*alinear txt*/
+	text-shadow: rgb(173,255,47) 1px 1px 1px;
+}
+
+/*clases*/
+
+.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}
+
+.menu:link{color: white; text-decoration: none;}
+.menu:visited{color: white; text-decoration: none;}
+.menu:hover{color: white; text-decoration: none; text-shadow: rgba(255, 255, 255, 0.0)}/*text-shadow: brillo texto de boton*/;
+.menu:active{color: white; text-decoration: none;}
+
+
+
